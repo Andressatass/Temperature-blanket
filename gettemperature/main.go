@@ -2,10 +2,14 @@ package main
 
 import (
 	"temperatureblanket/gettemperature/api"
+	"temperatureblanket/gettemperature/config"
 )
 
 func main() {
-	token := "123"
+
+	config := config.Configuration{}
+
+	token := config.Token
 
 	idInfo := api.GetId("BR", "SP", "São Paulo", token)
 
