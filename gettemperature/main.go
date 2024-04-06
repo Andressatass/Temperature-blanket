@@ -9,8 +9,10 @@ func main() {
 
 	idInfo := api.GetId("BR", "SP", "São Paulo", token)
 
-	api.PutCityId(idInfo[0].Id, token)
+	api.RegisterCityId(idInfo[0].Id, token)
 
-	api.GetTemperature(idInfo[0].Id, token)
+	//api.GetRegisteredCityByToken(token)
+
+	api.GetCurrentWeather(idInfo[0].Id, token)
 
 }

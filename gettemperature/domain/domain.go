@@ -11,3 +11,8 @@ type LocaleId struct {
 	Status  string
 	Locales []int
 }
+
+type ResgisteredCitys struct {
+	Locales    []int `json:"locales"`
+	MaxAllowed int   `json:"max_allowed"`
+}
