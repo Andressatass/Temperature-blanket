@@ -16,3 +16,9 @@ type ResgisteredCitys struct {
 	Locales    []int `json:"locales"`
 	MaxAllowed int   `json:"max_allowed"`
 }
+
+type WeatherInfo struct {
+	Token   string
+	City    string
+	Weather string
+}

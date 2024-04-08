@@ -3,7 +3,7 @@ package configuration
 import (
 	"fmt"
 
-	"temperatureblanket/gettemperature/app"
+	"temperatureblanket/getweather/app"
 
 	"github.com/iamolegga/enviper"
 	"github.com/spf13/viper"

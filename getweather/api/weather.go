@@ -7,7 +7,7 @@ import (
 	http "net/http"
 	neturl "net/url"
 	"strings"
-	"temperatureblanket/gettemperature/domain"
+	"temperatureblanket/getweather/domain"
 )
 
 func GetCurrentWeather(cityId int, token string) {
