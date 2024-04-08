@@ -2,12 +2,17 @@ package main
 
 import (
 	"temperatureblanket/gettemperature/api"
-	"temperatureblanket/gettemperature/config"
+	"temperatureblanket/gettemperature/configuration"
 )
 
 func main() {
 
-	config := config.Configuration{}
+	var config configuration.Configuration
+
+	err := configuration.GetConfig(config)
+	if err != nil {
+		return
+	}
 
 	token := config.Token
 
@@ -17,6 +22,6 @@ func main() {
 
 	//api.GetRegisteredCityByToken(token)
 
-	api.GetCurrentWeather(idInfo[0].Id, token)
+	//api.GetCurrentWeather(idInfo[0].Id, token)
 
 }
