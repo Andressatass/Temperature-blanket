@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "GetWeather",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/gettemperature/main.go",
+            "env": {
+                "GETWEATHER_TOKEN": "teste",
+            },       
+        },
+
+    ]
+}
